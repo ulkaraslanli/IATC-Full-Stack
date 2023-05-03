@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+}
+  
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    width: 700px;
+    height: 500px;
+    border-radius: 24px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+  
+.result-section {
+    width: 50%;
+    height: 100%;
+    padding: 28px;
+    border-radius: 24px;
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));    
+}
+
+.summary-section {
+    width: 50%;
+    height: 100%;
+    padding: 42px 28px;
+}
+
+.result {
+    text-align: center;
+    font-size: 24px;
+    color: hsl(241, 100%, 89%);
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.circle {
+    height: 180px;
+    width: 180px;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    margin: 48px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  
+.result-section p {
+    text-align: center;
+}
+  
+.circle p:first-child {
+    color: hsl(0, 0%, 100%);
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.circle p:last-child, .info{
+    color: hsl(241, 100%, 89%);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.great {
+    color: hsl(0, 0%, 100%);
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.summary {
+    color: hsl(224, 30%, 27%);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.reaction {
+    position: relative;
+    background-color: rgb(255, 237, 237);
+    width: 100%;
+    height: 56px;
+    border-radius: 8px;
+    margin: 18px 0;
+}
+  
+.reaction img, .memory img, .verbal img, .visual img {
+    position: absolute;
+    top: 30%;
+    left: 10px;
+}
+
+.reaction-text {
+    position: absolute;
+    top: 28%;
+    left: 40px;
+    color: hsl(0, 100%, 67%);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.reaction .first-percentage {
+    margin-left: 100px;
+    font-weight: 500;
+    color: hsl(224, 30%, 27%);
+}
+
+.hundred {
+    font-weight: 700;
+}
+
+.memory {
+    position: relative;
+    background-color: rgb(251, 251, 202);
+    width: 100%;
+    height: 56px;
+    border-radius: 8px;
+    margin: 14px 0;
+}
+
+.verbal {
+    position: relative;
+    background-color: rgb(230, 255, 233);
+    width: 100%;
+    height: 56px;
+    border-radius: 8px;
+    margin: 14px 0;
+}
+
+.visual {
+    position: relative;
+    background-color: rgb(223, 240, 250);
+    width: 100%;
+    height: 56px;
+    border-radius: 8px;  
+    margin: 14px 0;
+}
+
+.memory .first-percentage {
+    margin-left: 105px;
+    font-weight: 500;
+    color: hsl(224, 30%, 27%);
+}
+
+.verbal .first-percentage {
+    margin-left: 122px;
+    font-weight: 500;
+    color: hsl(224, 30%, 27%);
+}
+
+.visual .first-percentage {
+    margin-left: 122px;
+    font-weight: 500;
+    color: hsl(224, 30%, 27%);
+}
+
+.memory .reaction-text {
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal .reaction-text {
+    color: hsl(166, 100%, 37%);
+}
+
+.visual .reaction-text {
+    color: hsl(234, 85%, 45%);
+}
+
+.continue {
+    width: 100%;
+    padding: 12px 24px;
+    margin: 24px 0;
+    border: none;
+    border-radius: 24px;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(221, 100%, 96%);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.continue:hover {
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));    
+    cursor: pointer;
+}

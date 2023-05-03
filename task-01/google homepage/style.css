@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 5px;
+    padding: 8px 16px;
+}
+
+nav li:last-child {
+    background-color: #1A73E8;
+    border-radius: 5px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav li:last-child a{
+    color: #fff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 81vh;
+    text-align: center;
+}
+
+img {
+    margin-bottom: 25px;
+}
+
+input[type="text"] {
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    width: 500px;
+    max-width: 100%;
+    outline: none;
+}
+
+.buttons {
+    margin-top: 25px;
+}
+
+input[type="submit"] {
+    background-color: #F8F9FA;
+    border: 1px solid #F8F9FA;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+input[type="submit"]:hover {
+    border-color: #e6e6e6;
+}
+
+.offer {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.offer a {
+    text-decoration: none;
+
+}
+
+footer {
+    background-color: #F2F2F2;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.footer_topNav a {
+    color: #333;
+}
+
+.footer_bottomNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+  
+.footer_bottomNav_left a {
+    margin-right: 20px;
+    color: #333;
+}
+
+.footer_bottomNav_right a {
+    margin-left: 20px;
+    color: #333;
+}
+
+@media (max-width: 660px) {
+    * {
+        font-size: 12px;
+    }
+
+    input[type="text"] {
+        max-width: 80%;
+    }
+
+    .footer_topNav {
+        text-align: center;
+    }
+
+    .footer_bottomNav {
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .footer_bottomNav_left a {
+        margin-right: 0;
+    }
+    
+    .footer_bottomNav_right a {
+        margin-left: 0;
+    }
+    
+}

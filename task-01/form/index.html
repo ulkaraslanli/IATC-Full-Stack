@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-size: 20px;
+            background-color: #D3D3D3;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+        }
+
+        caption {
+            margin-bottom: 50px;
+        }
+        
+        tr label {
+            text-align: center;
+        }
+
+        .form_input {
+            width: 100%;
+            border: 1px solid #404040;
+            padding: 8px 16px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form>
+            <table>
+                <caption>
+                    <h1><u>Registration Form</u></h1>
+                </caption>
+                <tbody>
+                    <tr>
+                        <td><label for="fname">First Name</label></td>
+                        <td><input type="text" name="fname" id="fname" class="form_input"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="lname">Last Name</label></td>
+                        <td><input type="text" name="lname" id="lname" class="form_input"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="nickname">Nick Name</label></td>
+                        <td><input type="text" name="nickname" id="nickname" class="form_input"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">e-mail</label></td>
+                        <td><input type="email" name="email" id="email" class="form_input"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password</label></td>
+                        <td><input type="password" name="password" id="password" class="form_input"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="birthdate">Date of Birth</label></td>
+                        <td><input type="date" name="birthdate" id="birthdate" class="form_input"></td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>
+                            <input type="radio" name="gender" id="male" value="Male">
+                            <label for="male">Male</label>
+    
+                            <input type="radio" name="gender" id="female" value="Female">
+                            <label for="female">Female</label>
+    
+                            <input type="radio" name="gender" id="others" value="Others">
+                            <label for="others">Others</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="mobile">Mobile</label></td>
+                        <td><input type="tel" name="mobile" id="mobile" class="form_input"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="address">Address</label></td>
+                        <td><textarea name="address" id="address" rows="7" cols="20" class="form_input"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="Submit" style="margin-right: 30px; padding: 8px 16px;">
+                            <input type="reset" value="Reset" style="padding: 8px 16px;">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </main>  
+</body>
+</html>

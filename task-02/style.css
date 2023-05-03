@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: hsl(212, 45%, 89%);
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 18px;
+    width: 25%;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}  
+
+.card img {
+    width: 100%;
+    border-radius: 18px;
+}
+
+.container {
+    padding: 15px;
+    text-align: center;
+}
+
+.container .text {
+    margin: 10px;
+}
+
+.container h2 {
+    color: hsl(218, 44%, 22%);
+    font-weight: 700px;
+    padding: 4px 8px;
+}
+
+.container p {
+    color: hsl(220, 15%, 55%);
+    padding: 4px 8px;
+    font-size: 15px;
+    font-weight: 400px;
+}
