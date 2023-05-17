@@ -35,24 +35,6 @@ button {
 	gap: 16px;
 }
 
-.feature {
-	margin-right: 300px;
-	display: grid;
-	grid-template-columns: 1fr 350px;
-	gap: 100px;
-}
-
-.feature ul {
-	list-style: none;
-	padding: 0;
-}
-
-.feature ul li {
-	display: flex;
-	flex-direction: column;
-	gap: 8px;
-}
-
 .devices {
 	height: 600px;
 }
@@ -60,13 +42,7 @@ button {
 .devices img {
 	width: 100%;
 	height: 100%;
-	object-fit: contain;
-}
-
-@media screen and (max-width: 768px) {
-	.feature {
-		flex-direction: row;
-	}
+	object-fit: cover;
 }
 
 @media screen and (max-width: 375px) {

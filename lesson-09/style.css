@@ -41,6 +41,8 @@ button {
 	top: -105px;
 }
 
-main {
-    height: 100vh;
+body {
+	> main {
+		height: 100vh;
+	}
 }
