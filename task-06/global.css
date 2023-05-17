@@ -3,16 +3,6 @@
 	padding: 30px 0;
 	margin: 80px auto;
 }
-.container-md {
-	width: calc(1440px - 600px);
-	padding: 30px 0;
-	margin: 80px auto;
-}
-.container-lg {
-	width: calc(1440px - 330px);
-	padding: 30px 0;
-	margin: 0 auto;
-}
 
 .m-0 {
 	margin: 0;
@@ -365,6 +355,12 @@ p:hover {
 
 	.fitem3, .fitem4 {
 		margin-top: 48px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.fitem1 img {
+		width: 50%;
 	}
 }
 
