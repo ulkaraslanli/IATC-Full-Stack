@@ -45,10 +45,51 @@ button {
 	object-fit: contain;
 }
 
-@media screen and (max-width: 375px) {
-	.header {
-		background-image: url('images/bg-header-mobile.png');
+@media screen and (max-width: 950px) {
+	.btn-group {
+		flex-direction: column;
 	}
 }
 
+@media screen and (max-width: 768px) {
+	.devices {
+		height: 300px;
+	}
+}
+
+.animate {
+	animation-duration: 0.6s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-out;	
+}
+  
+.animate.fade-in {
+	animation-name: fade-in;
+}
+
+.animate.go-up {
+	animation-name: go-up;
+}
+
+.animate.fade-up {
+	animation-name: fade-in, go-up;
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes go-up {
+	from {
+		transform: translateY(50%);
+	}
+	to {
+		transform: translateY(0);
+	}
+}
 

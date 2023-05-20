@@ -1,7 +1,11 @@
 .container-sm {
-	width: calc(1440px - 700px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
 	padding: 30px 0;
 	margin: 80px auto;
+	text-align: center;
 }
 
 .m-0 {
@@ -148,7 +152,6 @@
 	font-weight: 600;
 	line-height: 1.25;
 	color: #4c545c;
-	margin: 0;
 }
 
 h1 {
@@ -351,10 +354,12 @@ p:hover {
 
 	.fitem2 {
 		margin-top: 56px;
+		text-align: center;
 	}
 
 	.fitem3, .fitem4 {
 		margin-top: 48px;
+		text-align: center;
 	}
 }
 
@@ -382,6 +387,7 @@ p:hover {
 	.second-grid {
 		display: grid;
 		grid-template-columns: auto;
+		gap: 56px;
 	}
 	
 	.sitem1, .sitem3 {
@@ -416,5 +422,60 @@ p:hover {
 		align-items: center;
 		margin: 0;
 
+	}
+}
+
+@media screen and (max-width: 986px) {
+	.container-sm {
+		width: 80%;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.btn {
+		width: 100%;
+		padding: 14px 50px;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.btn {
+		padding: 8px 24px;
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.btn {
+		padding: 4px 12px;
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	h1 {
+		font-size: 32px;
+		line-height: 40px;
+	}
+
+	h2 {
+		font-size: 28px;
+		line-height: 35px;
+	}
+
+	h3 {
+		font-size: 24px;
+		line-height: 30px;
+	}
+
+	p {
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	button {
+		font-size: 18px;
+		line-height: 30px;
 	}
 }
