@@ -1,6 +1,6 @@
 .providing > .photos > .wrapper {
-	width: 500px;
-	height: 500px;
+	width: 400px;
+	height: 400px;
 	border-radius: 50%;
 	overflow: hidden;
 	background-image: url('https://images.unsplash.com/photo-1461800919507-79b16743b257?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aHVtYW58ZW58MHx8MHx8&w=1000&q=80');
@@ -15,9 +15,9 @@
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
-	background-color: var(--black);
-	top: 200px;
-	left: 200px;
+	background-color: #EEEDEB;
+	top: 150px;
+	left: 150px;
 }
 
 .providing > .photos {
@@ -44,4 +44,5 @@
 	width: 49%;
 	height: 700px;
 	display: inline-block;
+	float: right;
 }
