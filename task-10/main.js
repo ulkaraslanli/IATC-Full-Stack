@@ -299,4 +299,3 @@ for (let i of numArr) {
 }
 
 console.log(sum);
-
