@@ -72,6 +72,7 @@ console.log(result);
 
 function firstRepeatedChar(str) {
     let charCount = {};
+    debugger;
 
     for (let i = 0; i < str.length; i++) {
         let char = str[i];
