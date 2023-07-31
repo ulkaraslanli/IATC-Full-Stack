@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Age calculator app</title>
+</head>
+<body>
+
+  <div id="container">
+    <div class="wrapper">
+      <form id="ageForm">
+        <div class="grid-container">
+          <div class="input-group item-1">
+            <label for="day">DAY</label><br>
+            <input type="number" id="day" min="1" max="31" required placeholder="DD">
+          </div>
+          <div class="input-group item-2">
+            <label for="month">MONTH</label><br>
+            <input type="number" id="month" min="1" max="12" required placeholder="MM">
+          </div>
+          <div class="input-group item-3">
+            <label for="year">YEAR</label><br>
+            <input type="number" id="year" min="1900" max="2099" required placeholder="YYYY">
+          </div>  
+        </div>
+        <hr>
+        <div class="btn">
+          <button type="submit"><img src="images/icon-arrow.svg" alt="btn"></button>
+        </div>
+      </form>
+      <div id="result"></div>
+    </div>  
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
