@@ -7,25 +7,25 @@ cartHeading.append('CART');
 cart.append(cartHeading);
 
 async function getProducts() {
-try {
-	const response = await fetch('https://fakestoreapi.com/products');
+	try {
+		const response = await fetch('https://fakestoreapi.com/products');
 
-	if (response.status !== 200) {
-		throw new Error('No data');
+		if (response.status !== 200) {
+			throw new Error('No data');
+		}
+
+		const products = await response.json();
+
+		return {
+			error: null,
+			data: products,
+		};
+	} catch (error) {
+		return {
+			error: error.message,
+			data: [],
+		};
 	}
-
-	const products = await response.json();
-
-	return {
-		error: null,
-		data: products,
-	};
-} catch (error) {
-	return {
-		error: error.message,
-		data: [],
-	};
-}
 }
 
 function renderProducts() {
@@ -84,7 +84,7 @@ function findClickedProduct(event) {
   if (productItem) {
 	const productId = productItem.dataset.id;
 
-	const data = getData('cartData') || {};
+	const data = getData('cartData');
 
 	if (data[productId]) {
 	  data[productId] += 1;
@@ -197,23 +197,17 @@ async function addCart(data) {
 		<div class="cart_image">
 		  <img src="${product.image}" alt="${product.title}">
 		</div>
-		<div class="product__body">
-		  
+		<div class="product__body">		  
 			<h2>${product.title}</h2>
-		  
-		  
 			<p class="product__price">
 			  <span>Price:</span>
 			  <span>${product.price * quantity}</span>
 			  <span>₼</span>
-			</p>
-		  
-		  
+			</p>	  
 			<p class="product__quantity">
 			  <span>Quantity:</span>
 			  <span>${quantity}</span>
-			</p>
-		  
+			</p>	  
 		</div>
 	  `;
 	  fragmentCart.appendChild(cartItem);
